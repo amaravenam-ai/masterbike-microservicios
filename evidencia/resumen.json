@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "publication": "NO_PUBLICADO",
-  "status": "PREPARADO_PARA_REVISION_DEL_TITULAR",
-  "selected_files_excluding_this_summary_sha256": "1c48295a2974a248a7ffe9dad8c6bb7f85dac13582e30f6336deaa4790a09050",
+  "publication": "PUBLICADO",
+  "status": "VERIFICACION_CI_EN_CURSO",
+  "selected_files_excluding_this_summary_sha256": "aa89115557d5f29c5dd2c6f026ffd0e6eb09418c71c9ad0ae93b203627468151",
   "evidence": {
     "modules_compiled_and_packaged": 8,
     "tests_passed": 40,
@@ -72,7 +72,8 @@
       "Referencias de aplicación sin integridad ni transacciones distribuidas",
       "Pruebas de contexto con base excluidas de las 40; integración real mediante scripts HTTP/MySQL",
       "No todos los endpoints ni reglas de negocio tienen cobertura",
-      "CI preparada, aún no ejecutada en GitHub para este candidato"
-    ]
+      "Consultar el resultado de GitHub Actions para cada commit publicado"
+    ],
+    "readiness_regression_tests": 2
   }
 }

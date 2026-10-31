@@ -16,7 +16,7 @@ Instalar o disponer de JDK 21 y Maven 3.9.12. Desde esta raíz:
 mvn -B -ntp '-Dtest=*ServiceTest,*ControllerTest' -Dsurefire.failIfNoSpecifiedTests=false verify
 ```
 
-En PowerShell, mantener entre comillas los argumentos -D con puntos. La automatización adjunta fija Java 21, pero no se ha ejecutado aún en GitHub.
+En PowerShell, mantener entre comillas los argumentos -D con puntos. La automatización adjunta fija Java 21. El estado de cada ejecución se consulta en GitHub Actions; incluye dos pruebas de regresión de la espera HTTP del recorrido.
 
 ## Entorno aislado de demostración
 
@@ -53,5 +53,5 @@ El nombre del proyecto Compose es portfolio-masterbike; no reutilizarlo para bas
 
 El script espera a que estén disponibles las API, crea un registro ficticio por servicio y guarda sus respuestas completas para compararlas después del reinicio. No borra registros existentes. El snapshot es local y está excluido de Git.
 La primera inicialización de las ocho bases puede tomar varios minutos. El control de salud consulta MySQL con el usuario de demostración por TCP; no confunde el servidor temporal de inicialización con una base lista. El entorno se verificó con aproximadamente 8 GB asignados a Docker, manteniendo servicios ajenos intactos.
-Ver [arquitectura, contratos y límites](docs/ARQUITECTURA.md). La automatización tiene pruebas Maven y un trabajo separado de integración Docker; todavía no se ha ejecutado en GitHub para este candidato.
+Ver [arquitectura, contratos y límites](docs/ARQUITECTURA.md). La automatización tiene pruebas Maven y un trabajo separado de integración Docker. Consultar [GitHub Actions](https://github.com/amaravenam-ai/masterbike-microservicios/actions) para el estado de cada commit. La espera del recorrido tolera reinicios TCP transitorios durante el arranque y mantiene un plazo máximo; no reintenta las operaciones de creación de datos.
 Ver `evidencia/resumen.json`, `TERCEROS.md` y `AVISO_DERECHOS.md`.

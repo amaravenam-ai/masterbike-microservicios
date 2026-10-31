@@ -9,6 +9,20 @@ from http.client import HTTPException
 from comprobar_apis import SOURCES, request
 
 
+def wait_ready(url, timeout):
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            code, _ = request(url)
+            if code == 200:
+                return
+        except (urllib.error.URLError, TimeoutError, HTTPException, ConnectionError):
+            pass
+        if time.monotonic() >= deadline:
+            raise RuntimeError(f'{url}: no disponible dentro del plazo')
+        time.sleep(2)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--sources', nargs='+', choices=SOURCES, default=SOURCES)
@@ -30,17 +44,7 @@ def main():
     }
     for source in args.sources:
         url = f'http://127.0.0.1:{18081 + SOURCES.index(source)}/api/v1/{source}'
-        deadline = time.monotonic() + args.espera
-        while True:
-            try:
-                code, _ = request(url)
-                if code == 200:
-                    break
-            except (urllib.error.URLError, TimeoutError, HTTPException):
-                pass
-            if time.monotonic() >= deadline:
-                raise RuntimeError(f'{source}: no disponible dentro del plazo')
-            time.sleep(2)
+        wait_ready(url, args.espera)
         if args.verificar_persistencia:
             saved = records[source]
             code, body = request(url+'/'+str(saved['id']))
