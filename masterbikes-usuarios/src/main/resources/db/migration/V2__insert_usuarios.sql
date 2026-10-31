@@ -1,0 +1,1 @@
+INSERT INTO usuario (nombre, correo, rol) VALUES ('Usuario Demo 1','demo1@example.invalid','ADMINISTRADOR'), ('Usuario Demo 2','demo2@example.invalid','TECNICO'), ('Usuario Demo 3','demo3@example.invalid','VENDEDOR');

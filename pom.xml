@@ -1,0 +1,11 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion><groupId>portfolio.masterbike</groupId><artifactId>masterbike-portafolio</artifactId><version>1.0.0</version><packaging>pom</packaging><modules>
+<module>masterbike-vm</module>
+<module>masterbike-vm-atencion</module>
+<module>masterbikes-usuarios</module>
+<module>masterbikes-bicicletas</module>
+<module>masterbikes-arriendos</module>
+<module>masterbikes-inventario</module>
+<module>masterbikes-ventas</module>
+<module>masterbikes-despachos</module>
+</modules></project>

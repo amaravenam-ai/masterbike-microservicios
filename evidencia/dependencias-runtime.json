@@ -1,0 +1,962 @@
+{
+  "scope": "Metadatos de los JAR de runtime construidos; no se publican esos binarios",
+  "dependencies": [
+    {
+      "artifact": "HikariCP-6.3.3",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "angus-activation-2.0.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "EDL 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "antlr4-runtime-4.13.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "BSD-3-Clause",
+          "url": "https://www.antlr.org/license.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "aspectjweaver-1.9.24",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Public License - v 2.0",
+          "url": "https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "bcprov-jdk18on-1.80",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Bouncy Castle Licence",
+          "url": "https://www.bouncycastle.org/licence.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "byte-buddy-1.17.7",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "classmate-1.7.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "commons-fileupload-1.5",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "commons-lang3-3.17.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "commons-text-1.13.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "feign-core-13.6",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "feign-form-13.6",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "feign-form-spring-13.6",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "feign-slf4j-13.6",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "flyway-core-11.7.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://flywaydb.org/licenses/flyway-oss"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "flyway-mysql-11.7.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://flywaydb.org/licenses/flyway-oss"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "hibernate-commons-annotations-7.0.3.Final",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License Version 2.0",
+          "url": "https://opensource.org/licenses/Apache-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "hibernate-core-6.6.29.Final",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "GNU Library General Public License v2.1 or later",
+          "url": "https://www.opensource.org/licenses/LGPL-2.1"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "hibernate-validator-8.0.3.Final",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "istack-commons-runtime-4.1.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Distribution License - v 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-annotations-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-core-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-databind-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-dataformat-toml-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-dataformat-yaml-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-datatype-jdk8-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-datatype-jsr310-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jackson-module-parameter-names-2.19.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.activation-api-2.1.4",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "EDL 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.annotation-api-2.1.1",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "EPL 2.0",
+          "url": "http://www.eclipse.org/legal/epl-2.0"
+        },
+        {
+          "name": "GPL2 w/ CPE",
+          "url": "https://www.gnu.org/software/classpath/license.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.inject-api-2.0.1",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.persistence-api-3.1.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Public License v. 2.0",
+          "url": "http://www.eclipse.org/legal/epl-2.0"
+        },
+        {
+          "name": "Eclipse Distribution License v. 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.transaction-api-2.0.1",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "EPL 2.0",
+          "url": "http://www.eclipse.org/legal/epl-2.0"
+        },
+        {
+          "name": "GPL2 w/ CPE",
+          "url": "https://www.gnu.org/software/classpath/license.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.validation-api-3.0.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jakarta.xml.bind-api-4.0.2",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Distribution License - v 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jandex-3.2.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jaxb-core-4.0.5",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Distribution License - v 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jaxb-runtime-4.0.5",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Distribution License - v 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jboss-logging-3.6.1.Final",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License 2.0",
+          "url": "https://repository.jboss.org/licenses/apache-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jspecify-1.0.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "jul-to-slf4j-2.0.17",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "MIT",
+          "url": "https://opensource.org/license/mit"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "log4j-api-2.24.3",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "log4j-to-slf4j-2.24.3",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache-2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "logback-classic-1.5.18",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Public License - v 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        },
+        {
+          "name": "GNU Lesser General Public License",
+          "url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "logback-core-1.5.18",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Public License - v 1.0",
+          "url": "http://www.eclipse.org/legal/epl-v10.html"
+        },
+        {
+          "name": "GNU Lesser General Public License",
+          "url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "micrometer-commons-1.15.4",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "micrometer-observation-1.15.4",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "mysql-connector-j-9.4.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The GNU General Public License, v2 with Universal FOSS Exception, v1.0",
+          "url": null
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "slf4j-api-2.0.17",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "MIT",
+          "url": "https://opensource.org/license/mit"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "snakeyaml-2.4",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-aop-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-aspects-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-beans-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-boot-3.5.6",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-boot-autoconfigure-3.5.6",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-boot-jarmode-tools-3.5.6",
+      "pom_in_cache": false,
+      "licenses_from_pom_or_parent": [],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO",
+      "licenses_from_embedded_notice": [
+        {
+          "name": "Apache License 2.0",
+          "source": "META-INF/LICENSE.txt y META-INF/NOTICE.txt del JAR construido",
+          "notice": "Spring Boot 3.5.6, Copyright (c) 2012-2025 VMware, Inc."
+        }
+      ]
+    },
+    {
+      "artifact": "spring-cloud-commons-4.3.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-cloud-context-4.3.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-cloud-openfeign-core-4.3.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-cloud-starter-4.3.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-cloud-starter-openfeign-4.3.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-context-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-core-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-data-commons-3.5.4",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-data-jpa-3.5.4",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-expression-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-jcl-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-jdbc-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-orm-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-security-crypto-6.5.5",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-tx-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-web-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "spring-webmvc-6.2.11",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "springdoc-openapi-starter-common-2.8.9",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "springdoc-openapi-starter-webmvc-api-2.8.9",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "springdoc-openapi-starter-webmvc-ui-2.8.9",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "The Apache License, Version 2.0",
+          "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "swagger-annotations-jakarta-2.2.30",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "swagger-core-jakarta-2.2.30",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "swagger-models-jakarta-2.2.30",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "swagger-ui-5.21.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache-2.0",
+          "url": null
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "tomcat-embed-core-10.1.46",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "tomcat-embed-el-10.1.46",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "tomcat-embed-websocket-10.1.46",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Apache License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "txw2-4.0.5",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "Eclipse Distribution License - v 1.0",
+          "url": "http://www.eclipse.org/org/documents/edl-v10.php"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    },
+    {
+      "artifact": "webjars-locator-lite-1.1.0",
+      "pom_in_cache": true,
+      "licenses_from_pom_or_parent": [
+        {
+          "name": "MIT",
+          "url": "https://github.com/webjars/webjars-locator-lite/blob/main/LICENSE.md"
+        }
+      ],
+      "distribution": "NO_INCLUIDO_EN_REPOSITORIO"
+    }
+  ]
+}

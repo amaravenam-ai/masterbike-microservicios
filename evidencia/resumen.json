@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-31",
+  "publication": "NO_PUBLICADO",
+  "status": "PREPARADO_PARA_REVISION_DEL_TITULAR",
+  "selected_files_excluding_this_summary_sha256": "1c48295a2974a248a7ffe9dad8c6bb7f85dac13582e30f6336deaa4790a09050",
+  "evidence": {
+    "modules_compiled_and_packaged": 8,
+    "tests_passed": 40,
+    "tests_skipped": 0,
+    "test_suites": [
+      {
+        "name": "com.masterbikes.clientes.services.ClienteServiceTest",
+        "tests": "8",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.masterbikes.arriendos.services.ArriendoServiceTest",
+        "tests": "7",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.masterbikes.bicicletas.services.BicicletaServiceTest",
+        "tests": "5",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.masterbikes.despachos.controllers.DespachoControllerTest",
+        "tests": "4",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.masterbikes.inventario.services.InventarioServiceTest",
+        "tests": "6",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.masterbikes.usuarios.controllers.UsuarioControllerTest",
+        "tests": "4",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.masterbikes.ventas.services.VentaServiceTest",
+        "tests": "6",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      }
+    ],
+    "build_jdk": "Temurin 21.0.10+7",
+    "runtime_jre": "Temurin 21.0.13+9",
+    "maven": "3.9.12",
+    "mysql": "8.0.46",
+    "docker_images_built": 8,
+    "http_services_verified": 8,
+    "flyway_migrations_applied": 17,
+    "feign_client_lookup": "PASS; cliente inexistente devuelve 404",
+    "restart_persistence": "PASS; ocho registros completos sin cambios",
+    "limits": [
+      "Aplicación académica sin autenticación/autorización completas",
+      "Referencias de aplicación sin integridad ni transacciones distribuidas",
+      "Pruebas de contexto con base excluidas de las 40; integración real mediante scripts HTTP/MySQL",
+      "No todos los endpoints ni reglas de negocio tienen cobertura",
+      "CI preparada, aún no ejecutada en GitHub para este candidato"
+    ]
+  }
+}

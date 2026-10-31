@@ -1,0 +1,1 @@
+INSERT INTO cliente (rut,nombre,apellidos,fecha_nacimiento,correo) VALUES ('DEMO-001','Cliente Demo 1','Ficticio','2000-01-01','cliente1@example.invalid'),('DEMO-002','Cliente Demo 2','Ficticio','2000-01-01','cliente2@example.invalid'),('DEMO-003','Cliente Demo 3','Ficticio','2000-01-01','cliente3@example.invalid');

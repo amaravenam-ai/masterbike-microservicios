@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS venta (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    id_cliente BIGINT NOT NULL,
+    fecha_venta DATE NOT NULL,
+    total DECIMAL(10,2) NOT NULL,
+    estado VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);

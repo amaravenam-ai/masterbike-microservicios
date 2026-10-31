@@ -1,0 +1,270 @@
+name: portfolio-masterbike
+services:
+  mysql-cliente:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: cliente_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_cliente_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-servicio-tecnico:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: servicio_tecnico_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_servicio_tecnico_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-usuario:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: usuario_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_usuario_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-bicicleta:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: bicicleta_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_bicicleta_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-arriendo:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: arriendo_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_arriendo_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-inventario:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: inventario_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_inventario_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-venta:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: venta_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_venta_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  mysql-despacho:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Defina la clave local}
+      MYSQL_DATABASE: despacho_db
+      MYSQL_USER: portfolio
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+    volumes:
+    - mysql_despacho_data:/var/lib/mysql
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - MYSQL_PWD="$$MYSQL_PASSWORD" mysql --protocol=TCP -h 127.0.0.1 -u "$$MYSQL_USER"
+        "$$MYSQL_DATABASE" -e "SELECT 1" >/dev/null
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 90s
+  masterbikes-clientes:
+    build:
+      context: ./masterbike-vm
+      dockerfile: dockerfile
+    depends_on:
+      mysql-cliente:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18081:8081
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-cliente:3306/cliente_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-servicio-tecnico:
+    build:
+      context: ./masterbike-vm-atencion
+      dockerfile: dockerfile
+    depends_on:
+      mysql-servicio-tecnico:
+        condition: service_healthy
+      masterbikes-clientes:
+        condition: service_started
+    ports:
+    - 127.0.0.1:18082:8082
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-servicio-tecnico:3306/servicio_tecnico_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      CLIENTE_SERVICE_URL: http://masterbikes-clientes:8081
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-usuarios:
+    build:
+      context: ./masterbikes-usuarios
+      dockerfile: dockerfile
+    depends_on:
+      mysql-usuario:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18083:8083
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-usuario:3306/usuario_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-bicicletas:
+    build:
+      context: ./masterbikes-bicicletas
+      dockerfile: dockerfile
+    depends_on:
+      mysql-bicicleta:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18084:8084
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-bicicleta:3306/bicicleta_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-arriendos:
+    build:
+      context: ./masterbikes-arriendos
+      dockerfile: dockerfile
+    depends_on:
+      mysql-arriendo:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18085:8085
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-arriendo:3306/arriendo_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-inventario:
+    build:
+      context: ./masterbikes-inventario
+      dockerfile: dockerfile
+    depends_on:
+      mysql-inventario:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18086:8086
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-inventario:3306/inventario_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-ventas:
+    build:
+      context: ./masterbikes-ventas
+      dockerfile: dockerfile
+    depends_on:
+      mysql-venta:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18087:8087
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-venta:3306/venta_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+  masterbikes-despachos:
+    build:
+      context: ./masterbikes-despachos
+      dockerfile: dockerfile
+    depends_on:
+      mysql-despacho:
+        condition: service_healthy
+    ports:
+    - 127.0.0.1:18088:8088
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-despacho:3306/despacho_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: portfolio
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?Defina la clave local}
+      JAVA_TOOL_OPTIONS: -Xmx192m
+volumes:
+  mysql_cliente_data: null
+  mysql_servicio_tecnico_data: null
+  mysql_usuario_data: null
+  mysql_bicicleta_data: null
+  mysql_arriendo_data: null
+  mysql_inventario_data: null
+  mysql_venta_data: null
+  mysql_despacho_data: null
